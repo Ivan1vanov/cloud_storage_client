@@ -1,0 +1,8 @@
+<div>
+    <p *ngIf="isLogin">
+        Do not have and account? - <a routerLink={{signUpPath}}>Create an account</a> 
+    </p>
+    <p *ngIf="!isLogin">
+        Already have an account? - <a routerLink={{loginPath}}>Sign in</a> 
+    </p>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="inputContainer">      
+        <input [type]="prepareInputType()" required [name]="inputName" [(ngModel)]="inputValue" (input)="onInputChange()">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>{{ labelName }}</label>
+    </div>
+    <div *ngIf="type === 'password'">
+        <app-show-password-button [isPasswordHidden]="isPasswordHidden" (click)="isPasswordHidden ? showPassowrd() : hidePassowrd()"/>
+    </div>
+</div>

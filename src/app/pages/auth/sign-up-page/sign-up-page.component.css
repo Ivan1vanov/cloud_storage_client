@@ -1,0 +1,26 @@
+.signUpPageContainer { 
+    font-family:'Roboto';
+    width:600px; 
+    margin:30px auto 0; 
+    display:block; 
+    background:#FFF;
+    padding:10px 50px 50px;
+  }
+
+ .authTitle {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-name: slideInFromLeft;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(3em);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
