@@ -15,12 +15,3 @@
     animation-duration: 0.2s;
     animation-timing-function: ease-out;
 }
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(3em);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}

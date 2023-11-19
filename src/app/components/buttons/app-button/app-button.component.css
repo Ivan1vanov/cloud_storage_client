@@ -1,0 +1,32 @@
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active {
+    transition-duration: 0.1s;
+    transform: scale(1);
+}
+
+.primary {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.secondary {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.danger {
+    background-color: #e74c3c;
+    color: #ffffff;
+}

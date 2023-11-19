@@ -14,7 +14,7 @@
     list-style: none;
 }
 
-.container {
+.headerContainer {
     display: flex;
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Raleway', sans-serif; */

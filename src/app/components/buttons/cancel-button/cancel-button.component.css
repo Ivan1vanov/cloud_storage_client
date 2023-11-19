@@ -1,0 +1,15 @@
+.cancelButton {
+    font-size: 1.3em;
+    background-color: #e01a00;
+    border: none;
+    padding: 0.2em 0.5em;
+    color: #fff;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.cancelButton:active {
+    background-color: #ca1a02;
+    transform: scale(0.95);
+}

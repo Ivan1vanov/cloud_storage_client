@@ -1,0 +1,11 @@
+.file-display {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+  
+.file-icon::before {
+  font-size: 24px;
+  margin-right: 10px;
+}
+  

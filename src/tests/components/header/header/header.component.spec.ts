@@ -36,29 +36,23 @@ describe('HeaderComponent', async () => {
   });
 
   it('should display profile routes if user is user is logged in', () => {
-    component.isLogined = true;
+    spyOn(component, 'getCookieValue').and.returnValue(true);
     fixture.detectChanges();
     const headerLinksTable = fixture.nativeElement.querySelector('.profileRoutesTable');
     expect(headerLinksTable).toBeTruthy();
   });
 
   it('should not profile routes if user is user is not logged in', () => {
-    component.isLogined = false;
-    fixture.detectChanges();
     const headerLinksTable = fixture.nativeElement.querySelector('.headerLinksTable');
     expect(headerLinksTable).toBeFalsy();
   });
 
   it('should display header links for not logged in users', () => {
-    component.isLogined = false;
-    fixture.detectChanges();
     const headerNotLoginedLinksTable = fixture.nativeElement.querySelector('.notLoggedInRoutesTable');
     expect(headerNotLoginedLinksTable).toBeTruthy();
   });
 
   it('should display header links for not logged in users', () => {
-    component.isLogined = false;
-    fixture.detectChanges();
     const headerNotLoginedLinksTable = fixture.nativeElement.querySelector('.notLoggedInRoutesTable');
     expect(headerNotLoginedLinksTable).toBeTruthy();
   });

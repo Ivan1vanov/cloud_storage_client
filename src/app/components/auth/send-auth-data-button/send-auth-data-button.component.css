@@ -11,7 +11,3 @@
     background-color: #ececec;
     transform: scale(0.95);
 }
-
-.sendAuthDataButton:active {
-    background-color: #f1f1f1;
-}

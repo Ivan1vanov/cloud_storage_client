@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.uploadFileInputContainer {
+    width: 70%;
+}
+
+.fileInfoModal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.418);
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.fileNameInfoSection {
+  display: flex;
+  align-items: center;
+}
+
+.provideFileInfoContainer {
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    margin-top: 5em;
+    padding: 2em;
+    font-family: 'Open Sans', sans-serif;
+    animation-name: slideInFromTop;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loaderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffbb;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.loader {
+    border-width: 5px;
+    border-color: #ffa8a8;
+    width: 175px;
+    height: 80px;
+    display: block;
+    margin:auto;
+    background-image: radial-gradient(circle 25px at 25px 25px, #080341 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #080341 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #080341 100%, transparent 0), linear-gradient(#080341 50px, transparent 0);
+    background-size: 50px 50px, 100px 76px, 50px 50px, 120px 40px;
+    background-position: 0px 30px, 37px 0px, 122px 30px, 25px 40px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .loader::before {
+    content: '';  
+    left: 60px;
+    bottom: 18px;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-image: radial-gradient(circle 8px at 18px 18px, #080341 100%, transparent 0), radial-gradient(circle 4px at 18px 0px, #080341 100%, transparent 0), radial-gradient(circle 4px at 0px 18px, #080341 100%, transparent 0), radial-gradient(circle 4px at 36px 18px, #080341 100%, transparent 0), radial-gradient(circle 4px at 18px 36px, #080341 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, #080341 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, #080341 100%, transparent 0), radial-gradient(circle 4px at 30px 30px, #080341 100%, transparent 0), radial-gradient(circle 4px at 5px 30px, #080341 100%, transparent 0), radial-gradient(circle 4px at 5px 5px, #080341 100%, transparent 0);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    animation: rotationBack 3s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    left: 94px;
+    bottom: 15px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-image: radial-gradient(circle 5px at 12px 12px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 12px 0px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 0px 12px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 24px 12px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 12px 24px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 20px 20px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 3px 20px, #080341 100%, transparent 0), radial-gradient(circle 2.5px at 3px 3px, #080341 100%, transparent 0);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    animation: rotationBack 4s linear infinite reverse;
+  }
+  
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }

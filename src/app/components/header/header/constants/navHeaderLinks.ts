@@ -4,18 +4,18 @@ import { HeaderRouteData } from '../types';
 export const headerProfileRoutes: HeaderRouteData[] = [
     {
         name: 'Home',
-        routePath: '#',
+        routePath: appRoutesPath.home,
     },
     {
-        name: 'My fiels',
-        routePath: '#',
+        name: 'Upload file',
+        routePath: appRoutesPath.file.upload,
+    },
+    {
+        name: 'My files',
+        routePath: appRoutesPath.file.my,
     },
     {
         name: 'Shared fiels',
-        routePath: '#',
-    },
-    {
-        name: 'Statistic',
         routePath: '#',
     },
 ]
