@@ -1,0 +1,11 @@
+<div class="documentItem">
+    <div class="iconContainer">
+        <display-file-logo [extension]='document.fileExtension' />
+        {{document.fileName}}.{{document.fileExtension}}
+    </div>
+    <div class="buttonsContainer">
+        <app-button buttonText="Open" color="primary"/>
+        <app-button buttonText="Download" color="secondary"/>
+        <app-button buttonText="Delete" color="danger"/>
+    </div>
+</div>

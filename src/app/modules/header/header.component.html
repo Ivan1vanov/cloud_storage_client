@@ -1,0 +1,13 @@
+<div class="headerContainer">
+    <header-logo/>
+    <ul class="profileRoutesTable" *ngIf="isSignetIn">
+        <li *ngFor="let route of profileRouteData">
+            <nav-link-header [routeData]=route></nav-link-header>
+        </li>
+    </ul>
+    <ul class="notLoggedInRoutesTable" *ngIf="!isSignetIn">
+        <li *ngFor="let route of guestRouteData">
+            <nav-link-header [routeData]=route></nav-link-header>
+        </li>
+    </ul>
+</div>

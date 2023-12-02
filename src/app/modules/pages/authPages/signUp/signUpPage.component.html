@@ -1,0 +1,12 @@
+<div class="signUpPageContainer">
+    <h1 class="authTitle">Sign Up</h1>
+    <form (ngSubmit)="onSubmit()">
+        <app-auth-input inputName="firstName" type="text" labelName="First name" [(inputValue)]="formData.firstName"/>
+        <app-auth-input inputName="lastName" type="text" labelName="Last name" [(inputValue)]="formData.lastName"/>
+        <app-auth-input inputName="text" type="text" labelName="Email" [(inputValue)]="formData.email"/>
+        <app-auth-input inputName="password" type="password" labelName="Password" [(inputValue)]="formData.password"/>
+        <app-map-error-messages [errorMessages]="errorMessages" />
+        <switch-auth-option [isLogin]="false" />
+        <app-button buttonText="Sign Up" color="secondary"/>
+    </form>
+</div>
