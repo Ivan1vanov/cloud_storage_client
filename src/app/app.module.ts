@@ -1,43 +1,23 @@
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router'
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { appRoutes } from './constants';
 import { AppComponent } from './app.component';
-import { 
-  HeaderComponent,
-  NavLinkHeaderComponent,
-  LogoSectionComponent,
-  AuthInputComponent,
-  ShowPasswordButtonComponent,
-  SendAuthDataButtonComponent,
-  SwitchAuthTypeTextComponent,
-  MapErrorMessagesComponent,
-} from './components';
-import { 
-  LoginPageComponent,
-  SignUpPageComponent
-} from './pages';
+import { AppPagesModule, HeaderModule} from './modules';
+import { appRoutes } from './config/appRoutes';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    NavLinkHeaderComponent,
-    LogoSectionComponent,
-    AuthInputComponent,
-    LoginPageComponent,
-    ShowPasswordButtonComponent,
-    SendAuthDataButtonComponent,
-    SignUpPageComponent,
-    SwitchAuthTypeTextComponent,
-    MapErrorMessagesComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AppPagesModule,
+    HeaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

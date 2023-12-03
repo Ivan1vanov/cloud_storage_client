@@ -1,8 +1,8 @@
 export interface ErrorAppResponse {
-    error: string[] | ErroResponseObject
+    error: string[] | ErrorResponseObject
 }
 
-export interface ErroResponseObject {
+export interface ErrorResponseObject {
     errors: {
         [key: string]: string;
     }

@@ -7,7 +7,7 @@
       "jasmine"
     ]
   },
-  "include": ["src/tests/**/*"],
+  "include": ["src/unit-tests/**/*"],
   "files": [
     "src/test.ts",
   ],

@@ -1,0 +1,14 @@
+.uploadButton {
+    font-size: 1.3em;
+    background-color: #084cdf;
+    border: none;
+    padding: 0.2em 0.5em;
+    color: #fff;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.uploadButton:active {
+    background-color: #063eb8;
+    transform: scale(0.95);
+}

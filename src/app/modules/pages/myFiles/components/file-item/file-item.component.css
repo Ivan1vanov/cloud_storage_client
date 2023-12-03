@@ -1,0 +1,18 @@
+.documentItem {
+    width: 15em;
+    background-color: rgb(235, 235, 235);
+    margin: 0 1rem;
+}
+
+.iconContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1em 0;
+}

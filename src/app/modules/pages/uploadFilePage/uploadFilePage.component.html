@@ -1,0 +1,26 @@
+<div>
+  <div class="container">
+    <form class="uploadFileInputContainer" #myForm="ngForm" (ngSubmit)="uploadFile()">
+      <app-upload-file-input (fileSelected)="onFileSelected($event)"></app-upload-file-input>
+      
+      <!-- modal window -->
+      <div *ngIf="formInputData.uploadedFile" class="fileInfoModal" [class.hidden]="!formInputData.uploadedFile" [@fadeInOut]>
+        <div class="provideFileInfoContainer">
+          <div *ngIf="isSending" class="loaderWrapper">
+            <span class="loader"></span>
+          </div>
+          <file-description-input [(inputValue)]="formInputData.description"></file-description-input>
+          <div class="fileNameInfoSection">
+            <display-file-logo [file]="formInputData.uploadedFile"></display-file-logo>
+            {{ formInputData.uploadedFile!.name }}
+          </div>
+          <app-button buttonText="Upload" color="primary"></app-button>
+          <app-button buttonText="Cancel" color="danger" (click)="cancelProcess"></app-button>
+          <app-map-error-messages [errorMessages]="errors"></app-map-error-messages>
+        </div>
+      </div>
+      <!-- modal window -->
+      
+    </form>
+  </div>
+</div>

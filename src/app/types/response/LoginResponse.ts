@@ -1,5 +1,5 @@
 export interface LoginResponse {
     success: boolean;
-    erros?: string[];
+    errors?: string[];
     token: string;
 }
