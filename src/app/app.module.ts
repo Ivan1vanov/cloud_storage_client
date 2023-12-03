@@ -3,10 +3,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router'
 import { HttpClientModule } from '@angular/common/http';
-import { appRoutes } from './common/constants';
 import { AppComponent } from './app.component';
 import { AppPagesModule, HeaderModule} from './modules';
-import { AppComponentsModule } from './components/AppComponents.module';
+import { appRoutes } from './config/appRoutes';
 
 @NgModule({
   declarations: [

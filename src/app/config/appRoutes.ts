@@ -1,7 +1,7 @@
 import { Routes, mapToCanActivate } from '@angular/router';
-import { appRoutesPath } from './appRoutesPath';
-import { SignUpPageComponent, SignInPageComponent, HomePageComponent, UploadFilePageComponent, MyFilesPageComponent } from '../../../modules/pages';
-import { AuthRouterGuard } from '../../guards';
+import { appRoutesPath } from '../common/constants/routes/appRoutesPath';
+import { SignUpPageComponent, HomePageComponent, UploadFilePageComponent, MyFilesPageComponent, SignInPageComponent } from '../modules/pages';
+import { AuthRouterGuard } from '../common/guards';
 
 export const appRoutes: Routes = [
     {

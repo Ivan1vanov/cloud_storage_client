@@ -5,7 +5,7 @@
             <nav-link-header [routeData]=route></nav-link-header>
         </li>
     </ul>
-    <ul class="notLoggedInRoutesTable" *ngIf="!isSignetIn">
+    <ul class="guestRoutesTable" *ngIf="!isSignetIn">
         <li *ngFor="let route of guestRouteData">
             <nav-link-header [routeData]=route></nav-link-header>
         </li>
